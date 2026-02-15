@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+    font-family: 'Markazi Text';
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    /* to make child be inside parent box must change the default val of content-box into border-box */
+
+    box-sizing: border-box; 
+    scroll-behavior: smooth;  
+}
+
+header
+{
+    width: 100%;
+    padding: 10px 200px;
+    position: fixed;
+    z-index: 999;
+    background-color: #27ae60;
+    
+    display:flex; /* to make block element appear next to each other*/
+justify-content: space-between;
+align-items: center;
+}
+
+.Logo
+{
+font-weight: 700;
+font-size: 1.8em;
+text-decoration: none;
+color:rgb(255, 255, 255);
+}
+.Logo span
+{
+color: #f6bf08;
+}
+
+.Navigaton a
+{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.Navigaton a:hover
+{
+    color: rgb(4, 51, 144);
+}
+
+section
+{
+padding: 100px 200px ;
+}
+
+.main
+{
+    width: 100%;
+    /* min-height: 100vh ; */
+    /* minimum height viewport*/
+    height: 400px;
+    display: flex; /* flex with center */
+    align-items: center;
+    background:
+    linear-gradient(rgb(0 0 255 / 0.5), rgb(255 255 0 / 0.5)),
+    url("imgs/super-market-1.jpg");
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed; /*content float over image when scrolling*/
+}
+.centeringContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-direction: column;
+    align-items: center; */
+    
+}
+.main h2
+{
+    /* text-align: center; */
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top:10%;
+}
+
+
+.main p
+{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.main-btn
+{
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color:#ebc708;
+    border-radius: 20px;
+    width: 20%;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    margin-left: 40%;
+    font-size: 1.05em;
+    display: flex;
+    justify-content: center;
+    
+}
+.main-btn:hover
+{
+    transition: 0.7s ease; 
+    opacity: 0.9;
+    cursor: pointer;
+    transform:scale( 1.1);
+    margin-right: 10px;
+}
+
+.social-icons
+{
+
+    color:#fff;
+    padding-right: 30px;
+    font-size: 1.7em;
+}
+
+.title
+{
+display: flex;
+justify-content: center;
+color: rgb(68, 68, 237);
+font-weight: 1000;
+font-size: 3em;
+margin-bottom: 30px;
+}
+.title_category{
+  display: flex;
+justify-content: center;
+color: rgb(36, 36, 36);
+font-weight: 1000;
+font-size: 1.7em;
+margin-bottom: 30px;
+margin-top: 20px;  
+}
+.container_cards
+{
+display: flex;
+justify-content: center;
+
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.card{
+    background-color: white;
+    width: 18.0em;
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+.card-Category{
+    background-color: white;
+    /* width: 14.0em; */
+     width: 20.0em; /* fazlka */
+    
+     padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 10px;   
+}
+.card-Category:hover
+{
+    /* transition: 0.7s ease;  */
+    opacity: 0.8;
+    cursor: pointer;
+    /* transform:scale( 1.05); */
+    
+}
+.card:hover
+{
+    transition: 0.7s ease; 
+    cursor: pointer;
+    transform:scale( 1.1);
+}
+.icon_category{
+        /* display: flex;
+        justify-content: center; */
+
+    text-align: center;
+    color: rgb(255, 18, 18);
+    font-size: 2.0em;
+}
+.info_category
+{
+    text-align: center;
+}
+.info_category h3
+{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.info_category h5{
+    margin-bottom: 10px;
+    color: grey;
+}
+.info_category a
+{
+    color: #27ae60;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.icon_services{
+        /* display: flex;
+        justify-content: center; */
+
+    text-align: center;
+    color: rgb(68, 68, 237);
+    font-size: 4.0em;
+}
+.info_services
+{
+    text-align: center;
+}
+.info_services h3
+{
+    color: rgb(68, 68, 237);
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+/* ##############projects section ################ */
+
+.gallery
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.gallery .container_cards
+{
+ margin-top: 30px;
+ /* margin-bottom: 20px; */
+ /* margin-bottom: 70px; */
+}
+
+.gallery-card
+{
+    
+    
+    border-radius: 10px;
+    min-height: 5em;
+    width: 25%;
+    height: 100%; /* solve issue of :https://image2url.com/r2/default/images/1771077024548-7cf37002-80a8-4892-9438-f0510637798e.png */ 
+    
+    /* max-width: 30em; */
+    overflow: hidden;
+    margin: 8px 1px;
+ 
+}
+
+.gallery-card:hover
+{
+    transition: 0.6s ease;
+    cursor: pointer;
+    transform:scale( 1.02);
+}
+.gallery-card:hover .gallery-image img
+{
+ opacity: 0.8;
+}
+.gallery-image img
+{
+
+  border-radius: 10px;
+  object-fit:cover; /* crops image nicely if container is fixed */
+  display: block;/*  removes inline spacing issues */
+  width: 250px;
+  height: 200px; 
+}
+
+
+/* ######### bakery ###########*/
+.bakery-image img
+{
+    width: 40%;
+    height: auto;
+    object-fit:cover;/* crops image nicely if container is fixed */
+    display: block; /* removes inline spacing issues */
+    margin: 1.5em auto; /* centers the image horizontally */
+    align-items: center;
+}
+.addToCart
+{
+    border-radius: 5px;
+    background-color:#27ae60; 
+    width: 100%;
+        margin: 0 auto;
+        margin-top: 1em;
+    padding: 5px;}
+.addToCart a
+{
+    
+    color: #ffffff; 
+    font-size: 0.8em;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.addToCart:hover
+{
+    transition: 0.8s ease;
+    cursor: pointer;
+    transform:scale( 1.02);
+    background-color: #0f9d07ea;
+}
+.faq
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq h3
+{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0.5em auto;
+}
+.faq p
+{
+    color: rgb(99, 97, 97);
+    font-size: 1.1em;
+    font-weight: 500;
+
+}
+
+.project-info
+{
+    padding: 1em;
+}
+.project-category
+{
+font-size: 0.8em;
+}
+.project-title
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+.project-title span
+{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.more-details
+{
+    color: rgb(68, 68, 237);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;   
+}
+.more-details:hover
+{
+    color: rgb(96, 70, 143);
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;   
+}
+
+/* ############ Contact############## */
+
+.contact .icon_contact
+{
+    font-size: 3.0em;
+    color: rgb(68, 68, 237);
+    text-align: center;
+   
+/* instead i can use  */
+    /* display: flex;
+    justify-content: center; */
+     margin: 20px 0px;
+}
+.contact-us{
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    
+}
+.contact-us h3{
+    font-weight: 700;
+    font-family:'Times New Roman';
+}
+.contact-us p{
+    font-weight: 100;
+    font-size: 1.1em;
+    
+}
+/* ############ footer ############## */
+footer
+{
+    color: darkgrey;
+    background-color:#000016;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.footer a
+{
+    color: rgb(232, 232, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0.9em;
+}
+.footer a:hover
+{
+    color: rgb(136, 159, 234);
+}
+.footer-title
+{
+margin-top: 0.2em;
+}
+.footer-title span
+{
+    color: rgb(232, 232, 255);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* ################ responsive website */
+/* @media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+    .Navigaton a {
+        padding-left: 15px;
+        font-size: 1em;
+    }
+    .main h2 span {
+        font-size: 1.5em;
+    }
+    .main-btn {
+        width: 60%;
+        font-size: 0.9em;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .projects-card {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Navigaton {
+        margin-top: 10px;
+    }
+    .main h2 span {
+        font-size: 1.2em;
+    }
+    .main-btn {
+        width: 80%;
+        font-size: 0.8em;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 320px) {
+    header {
+        padding: 10px;
+    }
+    .Navigaton a {
+        padding-left: 10px;
+        font-size: 0.8em;
+    }
+    .main h2 span {
+        font-size: 1em;
+    }
+    .main-btn {
+        width: 100%;
+        font-size: 0.7em;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+} */
