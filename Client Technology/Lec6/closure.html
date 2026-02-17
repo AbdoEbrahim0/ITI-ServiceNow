@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // task 3 github
+
+function storeMessage()
+{
+let message="Hello, World!";
+
+return{
+    showMessage: function()
+    {
+        return message;
+    },
+    updateMessage: function(newMessage)
+    {
+        message=newMessage;
+    }
+};
+
+}
+const secret=storeMessage();
+console.log(secret.showMessage()) ;
+console.log(secret.updateMessage("i updated message!"));
+console.log(secret.showMessage()) ;
+
+    </script>
+</body>
+</html>
