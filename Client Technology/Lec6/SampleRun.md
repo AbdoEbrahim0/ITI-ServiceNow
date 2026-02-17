@@ -1,4 +1,4 @@
-![alt text](/imgs/image.png)
+![alt text](./imgs/image.png)
 ```html
 
 <!DOCTYPE html>
@@ -59,9 +59,9 @@ function addTask()
 </body>
 </html>
 ```
-![alt text](/imgs/image-1.png)
+![alt text](./imgs/image-1.png)
 
-![alt text](/imgs/image-2.png)
+![alt text](./imgs/image-2.png)
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +94,7 @@ function addTask()
 </html>
 ```
 <!-- start -->
-![alt text](/imgs/image-3.png)
+![alt text](./imgs/image-3.png)
 
 ```html
 <!DOCTYPE html>
@@ -133,4 +133,5 @@ console.log(secret.showMessage()) ;
     </script>
 </body>
 </html>
+
 ```
